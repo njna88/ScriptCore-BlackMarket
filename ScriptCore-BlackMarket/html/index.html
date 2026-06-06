@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ScriptCore Black Market</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+    <main id="app" class="hidden">
+        <section class="panel">
+            <header class="topbar">
+                <div>
+                    <p class="eyebrow">ScriptCore.dk</p>
+                    <h1 id="shopTitle">Black Market</h1>
+                </div>
+
+                <button id="closeBtn" class="close-btn" aria-label="Luk">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </header>
+
+            <section class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input id="searchInput" type="text" placeholder="Søg varer" autocomplete="off" spellcheck="false" />
+            </section>
+
+            <section id="itemsGrid" class="market-list"></section>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
